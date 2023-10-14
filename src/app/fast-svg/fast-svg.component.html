@@ -1,1 +1,15 @@
 <p>fast-svg works!</p>
+<ng-container *ngIf="time$ | async">
+  <ng-container *ngFor="let index of [].constructor(10000); trackBy: trackBy">
+    <fast-svg [name]="'icon1'" />
+    <fast-svg [name]="'icon2'" />
+    <fast-svg [name]="'icon3'" />
+    <fast-svg [name]="'icon4'" />
+    <fast-svg [name]="'icon5'" />
+    <fast-svg [name]="'icon6'" />
+    <fast-svg [name]="'icon7'" />
+    <fast-svg [name]="'icon8'" />
+    <fast-svg [name]="'icon9'" />
+    <fast-svg [name]="'icon10'" />
+  </ng-container>
+</ng-container>
